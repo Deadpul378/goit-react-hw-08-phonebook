@@ -25,7 +25,7 @@ export const ContactList = () => {
   const visibleContacts = getFilteredContacts();
 
   return (
-    <Box pt="10px" pr="10px" pb="10px" pl="50px" borderLeft="solid black 1px">
+    <Box pt="10px" pr="10px" pb="10px" pl="10px">
       <Filter />
       <List>
         {visibleContacts.map(({ name, id, number }) => {
