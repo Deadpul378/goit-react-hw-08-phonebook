@@ -17,7 +17,7 @@ const Contacts = () => {
   }, [dispatch]);
 
   return (
-    <Box p="20px" fontSize="20px" display="flex">
+    <Box p="20px" fontSize="20px">
       <InputForm />
       {contacts.length > 0 && <ContactList />}
       {isLoading && !error && <p>Request in progress...</p>}
